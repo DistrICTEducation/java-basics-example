@@ -40,7 +40,7 @@ public class Main {
      */
     private static void loadData(Library library) throws FileNotFoundException, IOException {
         
-        BufferedReader in = new BufferedReader(new FileReader("java-basics-example-src/data.csv"));
+        BufferedReader in = new BufferedReader(new FileReader("data.csv"));
         
         while (in.ready()) {
             String line = in.readLine();
