@@ -1,0 +1,17 @@
+#CSV file for the library application
+#
+#book,title,author,year,rating,isbn
+#comic,title,author,year,rating,issn/isbn,number,series
+#magazine,title,author,year,rating,issn,number,series,category
+book,Learning Python 5th Edition,Mark Lutz,2013,GOOD,978-1449355739
+comic,A Silent Hell,Juan Diaz Canales,2012,EXCELLENT,978-1595829313,4,Blacksad
+magazine,Wat is er mis met de jeugd van tegenwoordig?,KNACK,2014,UNKNOWN,0772-3210 P509557,44,Knack,General
+book,Harry Potter and the Deathly Hallows,J.K.Rowling,2009,EXCELLENT,978-0545139700
+book,Harry Potter And The Goblet Of Fire,J.K.Rowling,2002,EXCELLENT,978-0439139601
+book,The Unbearable Lightness of Being,Milan Kundera,2009,GOOD,978-0061148521
+book,The English Patient,Michael Ondaatje,1993,GOOD,978-0679745204
+comic,Asterix the Gaul,Rene Goscinny,2004,EXCELLENT,978-0752866055,1,Asterix and Obelix
+comic,The Day of the Black Sun,Van Jean Hamme,2010,GOOD,978-1849180399,1,XIII
+book,God Is Not Great: How Religion Poisons Everything,Christopher Hitchens,2009,GOOD,978-0446697965
+book,The God Delusion,Richard Dawkins,2008,GOOD,978-0618918249
+book,Introducing Microsoft SQL Server 2012,Ross Mistry,2012,GOOD,978-0735665156
