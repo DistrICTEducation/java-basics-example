@@ -29,7 +29,7 @@ import system.Library;
 public class GUI extends UserInterface {
 
     private final JFrame frame;
-    private final int WIDTH  = 400;
+    private final int WIDTH  = 700;
     private final int HEIGHT = 500;
     private final JMenuBar menuBar;
     private final JScrollPane scrollPane;
@@ -54,9 +54,12 @@ public class GUI extends UserInterface {
             {
                 this.menuBar = new JMenuBar();
                 JMenu menu = new JMenu("Options");
-                JMenuItem menuItem = new JMenuItem("Exit");
-                menuItem.setAction(new ExitApplicationAction());
-                menu.add(menuItem);
+                JMenuItem menuItem1 = new JMenuItem("Add item");
+                menuItem1.setAction(new AddNewItemAction());
+                menu.add(menuItem1);
+                JMenuItem menuItem2 = new JMenuItem("Exit");
+                menuItem2.setAction(new ExitApplicationAction());
+                menu.add(menuItem2);
 
                 this.menuBar.add(menu);
             }
@@ -93,6 +96,23 @@ public class GUI extends UserInterface {
         @Override
         public void actionPerformed(ActionEvent e) {
             System.exit(0);
+        }
+    }
+    
+    /**
+     * Exits the application.
+     */
+    private class AddNewItemAction extends AbstractAction {
+
+        public AddNewItemAction() {
+            super("Add item");
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                GUIAddItemWizard guiAddItemWizard = new GUIAddItemWizard(GUI.this);
+            } catch (Exception ex) {}
         }
     }
 

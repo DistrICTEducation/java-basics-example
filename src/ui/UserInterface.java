@@ -17,7 +17,7 @@ public abstract class UserInterface {
     /**
      * @param library the library that can be accessed through this view.
      */
-    public UserInterface(Library library) {
+    protected UserInterface(Library library) {
         super();
         this.setLibrary(library);
     }

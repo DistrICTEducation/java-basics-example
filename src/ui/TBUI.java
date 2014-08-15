@@ -15,7 +15,7 @@ public abstract class TBUI extends UserInterface {
     private final Scanner scanner;
     private final String TRY_AGAIN_MSG = "Wrong input, please try again.";
 
-    public TBUI(Library library) {
+    protected TBUI(Library library) {
         super(library);
         this.scanner = new Scanner(System.in);
     }
